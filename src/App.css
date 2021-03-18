@@ -2,11 +2,14 @@
 
 :root {
   --primary-white: #fff;
+  --primary-light-grey: #f4f4f4; 
   --primary-blue: #00FFFF;
   --primary-rasp: #FF007F;
-  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-purple: #9900cc; 
+  --primary-dark: rgb(52, 58, 64);
   --primary-red: #ef4035; 
   --primary-hover-red: #f33501; 
+  --primary-black: #000000; 
 }
 
 body {
@@ -140,4 +143,32 @@ nav ul li {
 @media(max-width: 468px) {
   .profile-img {
     width: 10rem; }
+}
+
+/***SKILLS***/
+
+.skills {
+  text-align: center; 
+  padding-bottom: 2rem; 
+  background-color: var(--primary-light-grey);
+}
+
+.skills h1 {
+  color: var(--primary-purple); 
+  text-transform: uppercase; 
+}
+
+.skills .box {
+  height: 16rem; 
+  border-bottom: 0.3125rem solid var(--primary-rasp);
+  padding: 0.625rem; 
+  margin-bottom: 1.875rem; 
+  color: var(--primary-purple);
+  background: var(--primary-white);  
+}
+
+.skills .box:hover {
+  background: var(--primary-black); 
+  border-bottom: 0.3125rem solid var(--primary-blue); 
+  color: var(--primary-rasp); 
 }
