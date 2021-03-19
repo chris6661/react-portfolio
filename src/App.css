@@ -6,6 +6,9 @@
   --primary-grey: #ccd1d9; 
   --primary-dark-grey: #666666; 
   --primary-blue: #00FFFF;
+  --primary-dark-blue: #0000b3; 
+  /* --primary-dark-blue: ; */
+  --primary-green: #009900;  
   --primary-rasp: #FF007F;
   --primary-purple: #9900cc; 
   --primary-dark: rgb(52, 58, 64);
@@ -51,10 +54,10 @@ nav ul li {
 /****HEADER****/
 .header-wrapper {
   position: relative; 
-  background: url(C:\Users\Admin\Desktop\fun-side-stuff\portfolio\src\aurora2.jpg) no-repeat;
+  background: url(C:\Users\Admin\Desktop\fun-side-stuff\portfolio\src\amsterdambg2.jpg) no-repeat;
   background-size: cover; 
   background-position: center; 
-  height: 90vh; 
+  height: 90vh;  
 }
 
 .main-info {
@@ -72,7 +75,7 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: var(--primary-rasp); 
+  color:var(--primary-white); 
   font-weight: bold; 
   text-transform: uppercase; 
 }
@@ -94,7 +97,7 @@ nav ul li {
 
 /****header main offer button****/
 .btn-main-offer {
-  border: 1px solid var(--primary-red); 
+  border: 1px solid var(--primary-blue); 
   text-transform: uppercase; 
   border-radius: 0; 
   padding: 0.625rem 0.75rem 0.75rem 0.75rem; 
@@ -104,7 +107,7 @@ nav ul li {
 
 .btn-main-offer:hover {
   text-decoration: none; 
-  background-color: var(--primary-hover-red);
+  background-color: var(--primary-green);
   color: var(--primary-white); 
   transition: .2s ease-in-out;
 }
@@ -124,6 +127,11 @@ nav ul li {
 }
 
 /***ABOUT ME***/
+
+.aboutme {
+  background: var(--primary-dark-grey); 
+  color: white; 
+}
 
 .photo-wrap {
   display: flex; 
@@ -157,7 +165,7 @@ nav ul li {
 }
 
 .skills h1 {
-  color: var(--primary-purple); 
+  color: var(--primary-dark-blue); 
   text-transform: uppercase; 
 }
 
@@ -168,6 +176,7 @@ nav ul li {
   margin-bottom: 1.875rem; 
   color: var(--primary-purple);
   background: var(--primary-white);  
+  transition: 0.3s ease-in-out; 
 }
 
 .skills .box:hover {
@@ -190,7 +199,7 @@ nav ul li {
 
 .experience h1 {
   text-transform: uppercase; 
-  color: var(--primary-rasp); 
+  color: var(--primary-green); 
 }
 
 .experience-wrapper::before {
@@ -262,4 +271,53 @@ nav ul li {
     direction: ltr; 
     width: 100%; 
   }
+}
+
+/***PORTFOLIO***/
+.portfolio-wrapper {
+  background: var(--primary-light-grey); 
+  padding: 3rem 0; 
+}
+
+.portfolio-image {
+  width: 15rem; 
+  border: 1px solid var(--primary-rasp); 
+  padding: 0 0.5rem; 
+}
+
+.portfolio-image-box {
+  position: relative; 
+  margin: 1rem; 
+}
+
+/***OVERFLOW BOX***/
+.overflow {
+  position: absolute; 
+  opacity: 0; 
+  background: var(--primary-black); 
+  width: 15rem; 
+  height: 8rem; 
+  top: 0; 
+  border: 1px solid var(--primary-red); 
+  cursor: pointer; 
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%; 
+  transition: 0.3sec ease-in-out; 
+}
+
+.portfolio-icon {
+  position: absolute; 
+  opacity: 0; 
+  margin-left: -8rem; 
+  margin-top: 3.6rem; 
+  color: var(--primary-rasp);
+  font-size: 1.5rem; 
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%; 
+  transition: 0.3s ease-in-out; 
+  cursor: pointer;  
 }

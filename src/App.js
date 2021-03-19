@@ -6,6 +6,8 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe'; 
 import Skills from './components/Skills'; 
 import Experience from './components/Experience'; 
+import Portfolio from './components/Portfolio'; 
+
 function App() {
   return (
     <>
@@ -25,7 +27,7 @@ function App() {
           type:'circle', 
           stroke: {
             width: 6,
-            color: '#fb87f8'
+            color: '#009900'
           }
         }
       }
@@ -35,6 +37,7 @@ function App() {
     <AboutMe />
     <Skills />
     <Experience />
+    <Portfolio />
     </>
   );
 }
