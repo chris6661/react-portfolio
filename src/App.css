@@ -277,6 +277,7 @@ nav ul li {
 .portfolio-wrapper {
   background: var(--primary-light-grey); 
   padding: 3rem 0; 
+  color: var(--primary-dark-blue); 
 }
 
 .portfolio-image {
@@ -320,4 +321,19 @@ nav ul li {
   opacity: 70%; 
   transition: 0.3s ease-in-out; 
   cursor: pointer;  
+}
+
+/***OVERFLOW BOX***/
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0.5rem; 
+}
+
+.hyper-link {
+  cursor: pointer; 
+  color: var(--primary-green); 
+}
+
+.hyper-link:hover { 
+  color: var(--primary-dark-blue); 
 }
