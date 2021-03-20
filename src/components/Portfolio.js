@@ -2,7 +2,6 @@ import React from 'react'
 import netflix from '../images/netflix.png'; 
 import galaxy1 from '../images/galaxy1.jpg'; 
 import lyrically from '../images/lyrically.png'; 
-import portfolio from '../images/portfoliosnip.PNG';
 // font awesome import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'; 
@@ -86,30 +85,6 @@ const Portfolio = () => {
         fadeInSpeed: 500
     }
 
-    const openPopupboxPortfolio = () => {
-        const content = (
-        <>
-        <img className='portfolio-image-popupbox' src={portfolio} alt='Project 2 placeholder'/>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
-        {/* keep netflix clone url for now and replace after you have next project in and ready to go */}
-        <b>Demo:</b> <a className='hyper-link' onClick = {() => window.open("", '_blank')}>""</a>
-        <br />
-        <b>GitHub:</b> <a className='hyper-link' onClick = {() => window.open("https://github.com/chris6661/react-portfolio")}>'https://github.com/chris6661/react-portfolio'</a>
-        </>
-        )
-        PopupboxManager.open({content})
-        
-    }
-
-    const popupboxConfigPortfolio = {
-        titleBar: {
-            enable: true, 
-            text: 'Portfolio'
-        }, 
-        fadeIn: true, 
-        fadeInSpeed: 500
-    }
-
     return (
         <div className='portfolio-wrapper'>
             <div className='container'>
@@ -133,18 +108,13 @@ const Portfolio = () => {
                         <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
                     </div>
                 {/* */}               
-                    <div className='portfolio-image-box' onClick={openPopupboxPortfolio}>
-                        <img className='portfolio-image' src= {portfolio} alt='React Portfolio'/>
-                        <div className='overflow'></div>
-                        <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
-                    </div>
-
+                  
                 </div>
-            </div>           
+            </div>     
+                  
             <PopupboxContainer {...popupboxConfigNetflix} />
             <PopupboxContainer {...popupboxConfigGalaxy1} />
             <PopupboxContainer {...popupboxConfigLyrically} />
-            <PopupboxContainer {...popupboxConfigPortfolio} />
 
         </div>
     )

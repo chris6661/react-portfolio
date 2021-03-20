@@ -143,7 +143,7 @@ nav ul li {
   width: 16rem; 
   border-radius: 50%; 
   padding: .3rem; 
-  border: 2px solid var(--primary-rasp); 
+  border: 2px solid var(--primary-blue); 
 }
 
 .about-heading {
