@@ -8,6 +8,7 @@ import {
     LinkedinIcon
 } from 'react-share'; 
 
+
 const Footer = () => {
     return (
         <div className = 'footer'>
@@ -47,6 +48,16 @@ const Footer = () => {
                 
                 <div className = 'col-lg-5 col-md-5 col-sm-6 align-items-center'>
                     <div className = 'd-flex justify-content-center'>
+                        
+                        {/*GitHub*/}
+                      
+                        {/*Linkedin*/}
+                        <LinkedinShareButton
+                        // url = {/*put portfolio url here */}
+                        >    
+                            <LinkedinIcon className = 'mx-3' size = {36}/>
+                       </LinkedinShareButton>
+
                         {/* facebook */}
                         <FacebookShareButton
                         // url = {/*put portfolio url here */}
@@ -61,12 +72,7 @@ const Footer = () => {
                             <TwitterIcon className = 'mx-3' size = {36}/>
                         </TwitterShareButton>
 
-                        {/*Linkedin*/}
-                        <LinkedinShareButton
-                        // url = {/*put portfolio url here */}
-                        >    
-                            <LinkedinIcon className = 'mx-3' size = {36}/>
-                        </LinkedinShareButton>
+                        
                     </div>
                     <p className = 'pt-3 text-center'>
                         Copyright&copy; 
