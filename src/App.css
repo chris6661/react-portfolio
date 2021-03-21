@@ -183,7 +183,7 @@ nav ul li {
 
 .skills .box:hover {
   background: var(--primary-black); 
-  border-bottom: 0.3125rem solid var(--primary-blue); 
+  border-bottom: 0.3125rem solid var(--primary-dark-blue); 
   color: var(--primary-green); 
 }
 
@@ -237,7 +237,7 @@ nav ul li {
   height: 1rem; 
   border-radius: 50%; 
   border: 0.3125rem solid var(--primary-black);
-  background: var(--primary-green); 
+  background: var(--primary-blue); 
   margin-top: 0.625rem; 
   z-index: 3;  
 }
