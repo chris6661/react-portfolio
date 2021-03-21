@@ -440,6 +440,16 @@ textarea.form-control {
   margin: -0.3rem 0; 
 }
 
+.error-message {
+  color: var(--primary-white); 
+  background: var(--primary-green); 
+}
+
+.success-message {
+  font-weight: 900; 
+  color: var(--primary-green); 
+}
+
 /***MEDIA***/
 @media(max-width: 768px) {
   .contact {
