@@ -12,10 +12,18 @@ const Header = () => {
                 backSpeed={60}
                 loop
                 />
-                <a href= '#' className="btn-contact"> Contact Me </a>
+                <a href= '#contact' className="btn-contact"> Contact Me </a>
             </div>
         </div>
     )
 }
+
+{/*<li className = "btn-contact">
+<Link smooth = {true} to = "contact" offset = {-110} className = 'btn-contact' href=#'#'> Contact Me </Link>
+</li>/}
+
+{/* <li className="nav-item">
+              <Link smooth = {true} to = "contact" offset = {-110} className="nav-link" href="#">Contact Me</Link>
+            </li> */}
 
 export default Header;

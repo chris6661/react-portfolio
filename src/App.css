@@ -184,7 +184,7 @@ nav ul li {
 .skills .box:hover {
   background: var(--primary-black); 
   border-bottom: 0.3125rem solid var(--primary-blue); 
-  color: var(--primary-rasp); 
+  color: var(--primary-green); 
 }
 
 /***EXPERIENCE***/
@@ -237,7 +237,7 @@ nav ul li {
   height: 1rem; 
   border-radius: 50%; 
   border: 0.3125rem solid var(--primary-black);
-  background: var(--primary-rasp); 
+  background: var(--primary-green); 
   margin-top: 0.625rem; 
   z-index: 3;  
 }
@@ -251,7 +251,7 @@ nav ul li {
 
 .timeline-content h3{
   margin-top: 0.3125rem; 
-  color: var(--primary-purple); 
+  color: var(--primary-dark-blue); 
   font-weight: 900; 
 }
 
@@ -376,7 +376,7 @@ nav ul li {
 }
 
 .contact h1 {
-  color: var(--primary-dark-blue); 
+  color: var(--primary-white); 
   padding: 1.3rem 0; 
   text-transform: uppercase; 
 }
@@ -393,9 +393,9 @@ nav ul li {
   background: none; 
   resize: none; 
   border: 0; 
-  border-bottom: 0.125rem solid var(--primary-lighter-grey);
+  border-bottom: 0.125rem solid var(--primary-white);
   border-radius: 0; 
-  color: var(--primary-dark-blue); 
+  color: var(--primary-white); 
   outline: 0 !important;
   box-shadow: none !important;  
   margin-bottom: 1rem; 
