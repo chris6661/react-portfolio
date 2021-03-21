@@ -4,7 +4,8 @@
   --primary-white: #fff;
   --primary-light-grey: #f4f4f4; 
   --primary-grey: #ccd1d9; 
-  --primary-dark-grey: #666666; 
+  --primary-dark-grey: #666666;
+  --primary-lighter-grey: #777777;  
   --primary-blue: #00FFFF;
   --primary-dark-blue: #0000b3; 
   /* --primary-dark-blue: ; */
@@ -25,6 +26,7 @@ body {
 nav {
   z-index: 2; 
 }
+
 /***MENU LINKS***/
 nav a.nav-link {
   letter-spacing: 0.0375rem;
@@ -95,8 +97,8 @@ nav ul li {
 }
 }
 
-/****header main offer button****/
-.btn-main-offer {
+/****header main button****/
+.btn-contact {
   border: 1px solid var(--primary-blue); 
   text-transform: uppercase; 
   border-radius: 0; 
@@ -105,7 +107,7 @@ nav ul li {
   margin: 2rem; 
 }
 
-.btn-main-offer:hover {
+.btn-contact:hover {
   text-decoration: none; 
   background-color: var(--primary-green);
   color: var(--primary-white); 
@@ -171,10 +173,10 @@ nav ul li {
 
 .skills .box {
   height: 16rem; 
-  border-bottom: 0.3125rem solid var(--primary-rasp);
+  border-bottom: 0.3125rem solid var(--primary-green);
   padding: 0.625rem; 
   margin-bottom: 1.875rem; 
-  color: var(--primary-purple);
+  color: var(--primary-dark-blue);
   background: var(--primary-white);  
   transition: 0.3s ease-in-out; 
 }
@@ -282,7 +284,7 @@ nav ul li {
 
 .portfolio-image {
   width: 15rem; 
-  border: 1px solid var(--primary-rasp); 
+  border: 1px solid var(--primary-dark-blue); 
   padding: 0 0.5rem; 
 }
 
@@ -313,7 +315,7 @@ nav ul li {
   opacity: 0; 
   margin-left: -8rem; 
   margin-top: 3.6rem; 
-  color: var(--primary-rasp);
+  color: var(--primary-green);
   font-size: 1.5rem; 
 }
 
@@ -336,4 +338,119 @@ nav ul li {
 
 .hyper-link:hover { 
   color: var(--primary-dark-blue); 
+}
+
+/***MEDIA***/
+@media(max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%; 
+  }
+}
+
+@media(max-height: 570px) {
+  .popupbox-wrapper {
+    height: 100%; 
+  }
+  .portfolio-image-popupbox {
+    width: 50%; 
+  }
+}
+
+@media(max-height: 280px) {
+  .popupbox-wrapper {
+    height: 90%; 
+  }
+  .portfolio-image-popupbox {
+    width: 30%; 
+  }
+}
+
+/***CONTACT SECTION***/
+.contact {
+  background: var(--primary-dark-grey); 
+  padding: 3rem 0; 
+}
+
+.contact h1 {
+  color: var(--primary-dark-blue); 
+  padding: 1.3rem 0; 
+  text-transform: uppercase; 
+}
+
+.contact p {
+  color: var(--primary-blue); 
+  font-size: 1.2rem;  
+}
+
+/***INPUT SECTION***/
+.contact input, .contact textarea {
+  width: 100%; 
+  box-sizing: border-box; 
+  background: none; 
+  resize: none; 
+  border: 0; 
+  border-bottom: 0.125rem solid var(--primary-lighter-grey);
+  border-radius: 0; 
+  color: var(--primary-dark-blue); 
+  outline: 0 !important;
+  box-shadow: none !important;  
+  margin-bottom: 1rem; 
+  padding-left: 0 !important;
+}
+
+.contact .container {
+  padding: 4rem 0; 
+}
+
+.contact input:focus, .contact textarea:focus {
+  background: transparent; 
+  color: var(--primary-blue); 
+  
+}
+
+.contact textarea {
+  height: 12.2rem !important; 
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%; 
+  background: none; 
+}
+
+.line {
+  position: relative; 
+  top: -0.8rem; 
+  width: 0; 
+  height: 0.125rem; 
+  background: var(--primary-blue); 
+  display: inline-block; 
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%; 
+  transition: width 1s ease-in-out; 
+}
+
+input.form-control {
+  margin: -0.3rem 0; 
+}
+
+textarea.form-control {
+  margin: -0.3rem 0; 
+}
+
+/***MEDIA***/
+@media(max-width: 768px) {
+  .contact {
+    overflow-x: hidden; 
+  }
+
+  .contacts .container {
+    padding: 0 1rem; 
+  }
+
+  .contact p {
+    padding: 0 0.4rem; 
+  }
 }
