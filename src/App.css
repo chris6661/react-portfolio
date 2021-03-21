@@ -464,3 +464,25 @@ textarea.form-control {
     padding: 0 0.4rem; 
   }
 }
+
+/***FOOTER***/
+.footer {
+  background: var(--primary-black); 
+  color: var(--primary-blue); 
+  padding: 3rem; 
+}
+
+.footer a {
+  text-decoration: none; 
+  color: var(--primary-blue); 
+}
+
+.footer a:hover {
+  text-decoration: none; 
+  color: var(--primary-blue); 
+  cursor: pointer; 
+}
+
+.footer p {
+  margin-bottom: 0; 
+}
