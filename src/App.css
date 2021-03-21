@@ -59,7 +59,7 @@ nav ul li {
   background: url(C:\Users\Admin\Desktop\fun-side-stuff\portfolio\src\amsterdambg2.jpg) no-repeat;
   background-size: cover; 
   background-position: center; 
-  height: 90vh;  
+  height: 100vh;  
 }
 
 .main-info {
@@ -323,6 +323,10 @@ nav ul li {
   opacity: 70%; 
   transition: 0.3s ease-in-out; 
   cursor: pointer;  
+}
+
+.popupbox-wrapper {
+  margin-top: 7rem; 
 }
 
 /***OVERFLOW BOX***/

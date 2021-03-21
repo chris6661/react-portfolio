@@ -2,7 +2,7 @@ import React from 'react'
 import Type from 'react-typed'; 
 const Header = () => {
     return (
-        <div className = "header-wrapper">
+        <div id = 'home' className = "header-wrapper">
             <div className = "main-info">
                 <h1>Web Development</h1>
                 <Type

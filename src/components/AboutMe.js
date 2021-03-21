@@ -2,7 +2,7 @@ import React from 'react';
 import author from '../portpholder1.png'
 const AboutMe = () => {
     return (
-         <div className='aboutme'>
+         <div id = 'about' className='aboutme'>
             <div className='container py-5'> 
                 <div className='row'>
                     <div className=' col-lg-6 col-xm-12'>
