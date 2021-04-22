@@ -16,6 +16,7 @@
     "react-hook-form": "^6.15.5",
     "react-particles-js": "^3.4.1",
     "react-popupbox": "^2.0.8",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
     "react-share": "^4.4.0",

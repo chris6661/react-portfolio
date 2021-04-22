@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-scroll';
+import {Link} from 'react-router-dom';
 //REACTFONT awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faBars } from "@fortawesome/free-solid-svg-icons"; 
@@ -17,11 +17,11 @@ const Navbar = () => {
           <ul className="navbar-nav ml-auto">
             
             <li className="nav-item active">
-              <Link smooth = {true} to = "home" className="nav-link" href="#">Home <span className="sr-only">(current)</span></Link>
+              <Link smooth = {true} to = "/" className="nav-link" href="#">Home <span className="sr-only">(current)</span></Link>
             </li>
 
             <li className="nav-item">
-              <Link smooth = {true} to = "about" offset = {-110} className="nav-link" href="#">About Me</Link>
+              <Link to = "/about" offset = {-110} className="nav-link" >About Me</Link>
             </li>
             
             <li className="nav-item">

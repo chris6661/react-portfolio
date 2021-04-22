@@ -2,14 +2,15 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import Particles from 'react-particles-js'; 
 import Navbar from './components/Navbar';
-import Header from './components/Header'; 
+// import Header from './components/Header'; 
+import Home from './components/Home'; 
 import AboutMe from './components/AboutMe'; 
 import Skills from './components/Skills'; 
 import Experience from './components/Experience'; 
 import Portfolio from './components/Portfolio'; 
 import Contact from './components/Contact'; 
 import Footer from './components/Footer'; 
-
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'; 
 function App() {
   return (
     <>
@@ -34,14 +35,21 @@ function App() {
         }
       }
     }} />
+    <Router>
+    <div className = "App">
     <Navbar />
-    <Header />
-    <AboutMe />
-    <Skills />
-    <Experience />
-    <Portfolio />
-    <Contact />
+    <Switch>
+    {/* <Header />  */}
+    <Route exact path = '/' component = {Home} />
+    <Route exact path = "/about" component = {AboutMe} />
+    <Route exact path = "/skills" component = {Skills} />
+    <Route exact path = "/experience" component = {Experience} />
+    <Route exact path = "/portfolio" component = {Portfolio} />
+    <Route exact path = "/contact" component = {Contact} />
+    </Switch>
     <Footer />
+    </div>
+    </Router>
     </>
   );
 }
